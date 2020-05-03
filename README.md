@@ -55,17 +55,6 @@ Run `$ python create_web_server.py` command from the file location
 ## Author
 Shilpa Singh
 
-## Explanation
-Boto is a python package that provides connectivity to AWS resources. Boto supports more than fifty Amazon services, running the whole range from compute, database, application, and payments and billing. As per the user scenario to launch a web server on any AWS account without any security requirements, this module seems to be a good fit. Unlike Lambda funtions, it provides the flexibility of creating AWS resources without using IAM roles. It comes with the capabilities of creating and accessing VPC and EC2 information which is essential for this task. The time taken to build this script was approximately five hours because of the unfamiliriaty with the module. 
-
-The interesting fact about Boto are the Client and Resource objects. Both objects access different set of functions from Boto but they utilize almost similar paramaters. The return type are different for both objects, Client returns dictionary type of values and Resource returns ec2 type of values. In comparision with Client object which returns values in key-pair format, the pre-defined functions used in Resource object are easy to associate with other AWS resources. For example, a subnet can be associated with a routing table only by `route_table.associate_with_subnet(SubnetId=subnet.id)` function which requires more efforts when using Client object.
-
-
-## Acknowledgments
-https://boto3.amazonaws.com/v1/documentation/api/latest/index.html
-https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Tutorials.WebServerDB.CreateWebServer.html
-
-
 
 ```python
 
